@@ -65,18 +65,32 @@ module Enumerable
 		count
 	end
 
-	def my_map
+	def my_map(a_proc=true)
 		result = []
 		self.my_each do |item|
-			result << yield(item)
+			if a_proc.is_a?(Proc)
+				result << a_proc.call(item)
+			else
+				result << yield(item)
+			end
 		end	
 		result
 	end
 
-	def my_inject(total=self.first)
-		total = 0
+	def my_inject(param=self.first)
+		total = param
 		self.my_each do |item|
+			total = yield(total, item)
 		end
+		total
+	end
+
+	def multiply_els
+		self.my_inject(1){|total, item| total * item}
 	end
 
 end
+
+x = Proc.new {|x| x * 2}
+p [1,2,3,4].my_map(x)
+p [1,2,3,4].my_map{|x| x * 2}
