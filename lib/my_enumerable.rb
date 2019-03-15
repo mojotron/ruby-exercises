@@ -84,13 +84,5 @@ module Enumerable
 		end
 		total
 	end
-
-	def multiply_els
-		self.my_inject(1){|total, item| total * item}
-	end
-
 end
 
-x = Proc.new {|x| x * 2}
-p [1,2,3,4].my_map(x)
-p [1,2,3,4].my_map{|x| x * 2}

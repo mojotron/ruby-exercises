@@ -19,9 +19,3 @@ def bubble_sort_by(arr)
 end
 
 
-p bubble_sort([9,8,7,6,5,4,3,2,1])
-
-p bubble_sort_by(["hi","hello","hey"]){|item1,item2| item1.length - item2.length}
-
-p bubble_sort_by([1,2,3,4,5]){|item1,item2| item2 - item1}
-

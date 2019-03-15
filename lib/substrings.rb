@@ -13,8 +13,3 @@ def substrings(words, dictionary)
 	end
 	matches
 end
-
-#p word_in_dictionary?("below", dictionary)#{ "below" => 1, "low" => 1 }
-p substrings("below",dictionary)
-p substrings("Howdy partner, sit down! How's it going?",dictionary)
-p substrings("Howdy partner, Howdy partner, Howdy partner",dictionary)

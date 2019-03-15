@@ -26,11 +26,5 @@ def stock_picker(input)
 	pairs[best_profit]
 end
 
-p stock_picker([17,3,6,9,15,8,6,1,10])
-p stock_picker([1,2,11,9])
-p stock_picker([3,11,9,8,2,4,1])
-p stock_picker([45,7,25,16,13,30])
-p stock_picker([3,75,3,45,3,12,75,45,1])
-p stock_picker([45,7,25,16,2,30])
 
 

@@ -71,11 +71,3 @@ def caesar_dicipher2(input,shift)
 end
 
 
-puts caesar_cipher('What a string!',5)#'Bmfy f xywnsl!'
-puts caesar_cipher2('What a string!',5)#'Bmfy f xywnsl!'
-puts caesar_dicipher('Bmfy f xywnsl!',5)#'What a string!'
-puts caesar_dicipher2('Bmfy f xywnsl!',5)#'What a string!'
-puts caesar_cipher('Mjqqt, Btwqi!', -5)#'Hello, World!'
-puts caesar_cipher2('Mjqqt, Btwqi!', -5)#'Hello, World!'
-puts caesar_cipher('Hello, World!', 75)#'Ebiil, Tloia!'
-puts caesar_cipher2('Hello, World!', 75)#'Ebiil, Tloia!'
